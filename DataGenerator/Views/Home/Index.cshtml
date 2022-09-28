@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@section Scripts
+{
+    <script src="~/lib/seedrandom/seedrandom.min.js"></script>
+    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+    <script src="~/lib/jquery-csv/dist/jquery.csv.min.js"></script>
+    <script src="~/lib/filesaver/dist/FileSaver.min.js"></script>
+    <script type="module" src="~/js/site.js"></script>
+}
+<div class="container-fluid flex-grow-0 mt-4">
+    <div class="text-center">
+        <div class="align-items-center d-flex flex-column">
+            <div class="mb-1 w-50">
+                <div class="input-group mb-2">
+                    <span class="input-group-text">
+                        <label for="locale" class="form-label">Country</label>
+                    </span>
+                    <select name="locale" id="locale" class="form-select">
+
+                    </select>
+                </div>
+                <div class="input-group mb-2">
+                    <span class="input-group-text">
+                        <label for="seed" class="form-label">Seed</label>
+                    </span>
+                    <input name="seed" class="form-control" type="text" />
+                    <button type="button" class="btn btn-outline-secondary" id="randomize-seed">Randomize</button>
+                </div>
+                <div class="input-group mb-2">
+                    <span class="input-group-text">
+                        <label for="errorProbability" class="form-label">Error probability</label>
+                    </span>
+                    <input name="errorProbability" class="errorProbability form-control" step="0.2" value="0" type="number" min="0" max="1000" />
+                    <input name="errorProbabilityRange" class="errorProbability form-range" value="0" type="range" min="0" max="10" step="0.001"/>
+                </div>
+                <button type="button" class="btn btn-success mb-2" id="export-csv">Export to csv</button>
+            </div>
+        </div>
+        <div id="table-wrapper"></div>
+        <div id="table-end"></div>
+    </div>
+</div>
+
+

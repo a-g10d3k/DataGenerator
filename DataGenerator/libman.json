@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "seedrandom@3.0.5",
+      "destination": "wwwroot/lib/seedrandom/",
+      "files": [
+        "seedrandom.min.js",
+        "lib/alea.js",
+        "lib/alea.min.js",
+        "lib/crypto.js",
+        "lib/tychei.js",
+        "lib/tychei.min.js",
+        "lib/xor128.js",
+        "lib/xor128.min.js",
+        "lib/xor4096.js",
+        "lib/xor4096.min.js",
+        "lib/xorshift7.js",
+        "lib/xorshift7.min.js",
+        "lib/xorwow.js",
+        "lib/xorwow.min.js"
+      ]
+    }
+  ]
+}
